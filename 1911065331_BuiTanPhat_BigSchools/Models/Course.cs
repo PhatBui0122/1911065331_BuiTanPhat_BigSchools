@@ -9,6 +9,7 @@ namespace _1911065331_BuiTanPhat_BigSchools.Models
 {
     public class Course
     {
+        public bool IsCanceled { get; set; }
         public int Id { get; set; }
         public ApplicationUser Lecturer { get; set; }
 
