@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 
@@ -28,7 +29,7 @@ namespace _1911065331_BuiTanPhat_BigSchools.ViewModels
         public IEnumerable<Category> Categories { get; set; }
         public DateTime GetDateTime()
         {
-            return DateTime.Parse(string.Format("{0} {1}", Date, Time));
+            return DateTime.ParseExact(string.Format("{0} {1}", Date, Time), "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
         }
         public string Heading { get; set; }
         public string Action

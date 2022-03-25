@@ -7,6 +7,7 @@ namespace _1911065331_BuiTanPhat_BigSchools.DTOs
 {
     public class FollowingDto
     {
-        public string FolloweedId { get; set; } 
+        public string FolloweeId { get; set; }
+        public int CourseId { get; set; }
     }
 }
