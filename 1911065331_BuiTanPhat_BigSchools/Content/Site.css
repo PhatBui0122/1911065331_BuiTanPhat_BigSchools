@@ -16,49 +16,51 @@
     white-space: normal;
 }
 .navbar-inverse {
-    background-color: palevioletred;
-    border-color: red;
+    background-color: #7cbafe;
+    border-color: #b4e637;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-    color: darkred;
-}
+    .navbar-inverse .navbar-nav > li > a {
+        color: yellow;
+    }
 
-.navbar-inverse .navbar-brand {
-    color: darkred;
-}
-.crs {
+    .navbar-inverse .navbar-brand {
+        color: yellow;
+    }
+
+.course {
     list-style: none;
+    margin-top:5px;
 }
 
-.crs > li {
-position: relative;
-margin-bottom: 30px;
-margin-top: 10px;
-}
+    .course > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
 
+        .course > li .date {
+            text-align: center;
+            background-color: #d41d50;
+            color: yellow;
+            width: 60px;
+            border-radius: 8px;
+        }
 
-.crs > li .details {
-    position: absolute;
-    top: 0;
-    left: 70px;
-}
+        .course > li .details {
+            position: absolute;
+            top: 0;
+            left: 70px;
+        }
 
-.crs > li .date {
-    text-align: center;
-    background-color: #eb6a05;
-    color: yellow;
-    width: 60px;
-    border-radius: 8px;
-}
-.crs > li .action {
-    display: none;
-    left: 70px;
-    position: absolute;
-}
-.crs > li:hover .action {
-    display: block;
-}
+        .course > li .action {
+            display: none;
+            left: 70px;
+            position: absolute;
+        }
+
+        .course > li:hover .action {
+            display: block;
+        }
     /* Set width on the form input elements since they're 100% wide by default */
     input, select, textarea {
     max-width: 280px;
